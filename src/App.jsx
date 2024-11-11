@@ -1,6 +1,8 @@
 
 import { useRef, useState } from 'react'
 import './App.css'
+import Container from './Components/Container';
+import Button from './Button';
 
 function App() {
  
@@ -19,16 +21,20 @@ let handleClick2=()=>{
 
   return (
     <>
-     <h1>UseState</h1>
+    <Container>
+    <h1>UseState</h1>
      <h2>{count}</h2>
-     <button oneClick={handleClick}>Click</button>
+     <button onClick={handleClick}>Click</button>
 
      {/* ============= */}
      <h1>UseState</h1>
      <h2>{countRef .current++}</h2>
-     <button oneClick={handleClick2}>Click</button>
+     <button onClick={handleClick2}>Click</button>
+    </Container>
+    
     </>
   )
 }
 
 export default App
+
