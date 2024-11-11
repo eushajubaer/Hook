@@ -28,7 +28,7 @@ let handleClick2=()=>{
 
      {/* ============= */}
      <h1>UseState</h1>
-     <h2>{countRef .current++}</h2>
+     <h2>{countRef .current}</h2>
      <button onClick={handleClick2}>Click</button>
     </Container>
     
